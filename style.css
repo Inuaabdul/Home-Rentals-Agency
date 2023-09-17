@@ -299,22 +299,16 @@ form {
 
 .lists {
     display: flex;
-    flex-direction: column;
-    gap: 61px;
+    flex-direction: row;
+    gap: 40px;
     padding-bottom: 81px;
+    flex-wrap: wrap;
 }
 
-.list-top {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 33px;
-}
 
 .card {
     height: 50%;
-    width: 33%;
+    width: 30%;
     display: flex;
     flex-direction: column;
     border-radius: 26.617px;
@@ -408,91 +402,32 @@ form {
     letter-spacing: -0.455px;
 }
 
-.list-down {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.pg {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 33%;
-    height: 74px;
-    border-radius: 6.728px;
-    border: 1.346px solid #BDBDBD;
-    background: #FFF;
-
-    /* Light Dropshadow */
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.10);
-}
-
-.pg1,
-.pg5 {
-    width: 25%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.pg2,
-.pg3,
-.pg4 {
-    width: 17%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #E9E9E9;
-    background: #FFF;
-}
-
-.pg1 {
-    border: 1px solid #BDBDBD;
-    background: #F3F3F3;
-}
-
-.pg3:active,
-.pg2:active,
-.pg4:active,
-.pg5:active {
-    border: 1px solid #E9E9E9;
-    background: #F4511E;
-    color: #fff;
-}
-
-.pg1 a,
-.pg2 a,
-.pg3 a,
-.pg4 a,
-.pg5 a {
-    color: #BDBDBD;
+.pages-next {
+    padding: 10px;
     text-align: center;
+    list-style: none;
+}
+
+.pages-next li {
+    background: #FFF;
+    padding: 20px;
+    display: inline-block;
+    cursor: pointer;
+    color: #F4511E;
     font-family: 'Montserrat';
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
     line-height: 24px;
     letter-spacing: 0.1px;
-    text-decoration: none;
+    border: 1.346px solid #BDBDBD;
 }
 
-.pg2 a,
-.pg4 a,
-.pg5 a,
-.pg3 a {
-    color: #F4511E;
+.pages-next .active {
+    background: #F4511E;
+    color: #fff;
 }
 
-.pg2 a:active,
-.pg3 a:active,
-.pg4 a:active,
-.pg5 a:active {
-    color: #FFF
-}
 
 .strech-page {
     width: 100%;
@@ -894,10 +829,6 @@ textarea::placeholder {
     padding: 130px 0 78px 0;
     position: relative;
     z-index: 5;
-}
-
-.cont {
-    height: 100%;
 }
 
 .quote {
@@ -1327,6 +1258,39 @@ footer {
     .owner {
         flex-direction: column-reverse;
         margin: 0;
+        height: auto;
+    }
+
+    .owner-left {
+        width: 100%;
+        padding: 50px 0px 40px 0px;
+        height: 50%;
+    }
+
+    .owner-left p {
+        font-size: 12px;
+        width: 300px;
+        text-align: justify;
+    }
+
+    .quote {
+        top: 10%;
+        left: 5%;
+    }
+
+    .quote svg {
+        width: 50px;
+        height: 50px;
+    }
+
+    .owner-left .profile {
+        padding-left: 10%;
+        width: 100%;
+    }
+
+    .owner-right {
+        width: 100%;
+        height: 40vh;
     }
 
     footer {
