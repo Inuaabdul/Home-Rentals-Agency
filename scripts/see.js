@@ -15,7 +15,7 @@ let properties = [
 const lists = document.querySelector('.lists')
 
 const addCard = () => {
-    lists.innerHTML = ''
+    // lists.innerHTML = ''
     properties.forEach((Element) => {
         const Mdiv = document.createElement('div')
         Mdiv.setAttribute('class', 'card')
